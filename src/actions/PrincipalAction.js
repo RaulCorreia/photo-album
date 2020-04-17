@@ -7,7 +7,7 @@ export function loadImages( ) {
         payload: {
             client: 'default',
             request: {
-                url: '/photosAA',
+                url: '/photos',
                 method: 'GET',
             }
         }

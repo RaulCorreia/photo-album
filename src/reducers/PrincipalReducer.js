@@ -12,7 +12,7 @@ export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
 
         case LOAD_IMAGES_SUCCESS:
-            return { ...state, images: action.payload.data };
+            return { ...state, images: action.payload.data, error: '' };
 
         case LOAD_IMAGES_FAIL:
             return { ...state, images: {}, error: action.error.message };
