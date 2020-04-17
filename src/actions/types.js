@@ -1,1 +1,7 @@
-export const DEFAULT_ACTION = 'DEFAULT_ACTION';
+
+export const LOAD_IMAGES = 'LOAD_IMAGES';
+export const LOAD_IMAGES_SUCCESS = 'LOAD_IMAGES_SUCCESS';
+export const LOAD_IMAGES_FAIL = 'LOAD_IMAGES_FAIL';
+
+export const CLEAR_ERROR = 'CLEAR_ERROR';
+export const CLEAR_IMAGES = 'CLEAR_IMAGES';

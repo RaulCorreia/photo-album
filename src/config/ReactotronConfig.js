@@ -9,7 +9,7 @@ console.disableYellowBox = true;
 // First, set some configuration settings on how to connect to the app
 const reactotron = Reactotron.configure({
   name: 'Scaffold',
-  host: 'http://192.168.0.1',
+  host: '192.168.1.8',
   port: 9090
 });
 

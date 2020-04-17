@@ -9,17 +9,10 @@ import { store, persistor } from './src/config/StoreConfig';
 import codePush from "react-native-code-push";
 
 import { Scenes } from './src/Scenes';
+import './src/config/ReactotronConfig';
 
 const ConnectedRouter = connect()(Router);
 
-/**
- * Don't forget to change/set your:
- * Name project (if you're going to use this project)
- * CodePush Key on strings.xml and assets/appcenter-config.json
- * Reactotron Host
- * ClientsConfig Host
- * ...whatever you want to.
- **/
 
 class App extends Component {
 

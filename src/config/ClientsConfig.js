@@ -3,7 +3,7 @@ import axios from 'axios';
 export default clients = {
     ['default']: {
         client: axios.create({
-            baseURL: 'http://192.168.0.1/api',
+            baseURL: 'https://jsonplaceholder.typicode.com',
             responseType: 'json',
             timeout: 6000
         })
