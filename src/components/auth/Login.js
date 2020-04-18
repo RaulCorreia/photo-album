@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Image, ActivityIndicator } from 'react-native';
 import { connect } from 'react-redux';
-import { Actions } from 'react-native-router-flux';
 import { Images } from '../../resources/Images';
 
 class Login extends Component {
@@ -25,7 +24,7 @@ class Login extends Component {
       // Deve ser digitado alguma coisa nos campos de login e senha
       this.setState({loading: false});
       if(this.state.email.length && this.state.password.length){
-        Actions.main();
+        this.props.navigation.navigate('App');
       } else {
         alert('Email e/ou Senha Invalido');
       }

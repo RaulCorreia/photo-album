@@ -4,13 +4,12 @@ import { Container, Icon } from 'native-base';
 import { connect } from 'react-redux';
 
 import { clearImages } from '../../actions/PrincipalAction';
-import { Actions } from 'react-native-router-flux';
 
 class More extends Component {
 
     _onPressButton = () => {
         this.props.clearImages();
-        Actions.auth();
+        this.props.navigation.navigate('Auth');
     }
 
     render() {
@@ -26,7 +25,7 @@ class More extends Component {
 
                 <TouchableOpacity style={styles.loginBtn} onPress={this._onPressButton}>
                     <View style={styles.viewBtn}>
-                        <Icon type="MaterialCommunityIcons" style={{ color: '#000000' }} name={'logout'} />
+                        <Icon type="MaterialCommunityIcons" style={{ color: '#aaaf' }} name={'logout'} />
                         <Text style={styles.titleText}>Sair</Text>
                     </View>
                 </TouchableOpacity>
@@ -38,6 +37,7 @@ class More extends Component {
 
 const styles = StyleSheet.create({
     header: {
+        marginTop: 20,
         margin: 10,
         alignItems: 'flex-start',
     },
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     },
     line: {
         borderBottomColor: '#aaaf',
-        borderBottomWidth: 1,
+        borderBottomWidth: 0.5,
     },
     loginBtn: {
         backgroundColor:"#ffffff",
@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
         borderWidth: 0.5
     },
     viewBtn: {
-        flexDirection: 'row', 
-        marginLeft: 5
+        flexDirection: 'row',
+        marginLeft: 10
     }
 });
 
